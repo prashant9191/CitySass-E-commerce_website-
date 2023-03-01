@@ -1,6 +1,6 @@
 # CitySass, Fashion website  
 
-Screenshots are attached below in a proper flow
+# Screenshots are attached below in a proper flow
 
 This is a construct week project of cloning https://www.columbia.com/ that is built in 5 days .
 
