@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b4c8ae89b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../Styles/admin.css" />
+    <title>ADMIN DASHBOARD</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.sliderbtn').click(function(){
+       $('.sliderbtn').toggleClass('active');
+       $('#sidebar').toggleClass('inandout');
+       })
+     })
+    </script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <div id="sidebar">
+        <div>
+          <button class="sliderbtn" id="sliderbutton">
+             <div class="hamburger">
+             </div>
+          </button>
+          <ul>
+            <li style="background-color: #CFD8DC;"><a href="../index.html"><i class="fa fa-bars"></i><img src="https://i.ibb.co/4JnjqbJ/City-Sass-removebg-preview-1.png" style="width: 150px;height: 45px;position: absolute;" alt=""></a></li>
+            <li><a href="../index.html"><i class="fa fa-house"></i>Home</a></li>
+            <li id="men_p"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Men's Products</a></li>
+            <li id="women_P"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Women's Products</a></li>
+          <li id="kid_P"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Kid's Products</a></li>
+            <li id="fot_w"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Footwear</a></li>
+            <li><a href="./cart.html" target="_blank"><i class="fa fa-cart-shopping"></i>Cart</a></li>
+            <li><a href="./admin.html" target="_blank" class="icolortoblack" ><i class="fa-solid fa-user-secret" ></i>Admin Panel</a></li>
+            <li><a href="./Signin&Signup.html" target="_blank"><i class="fa fa-address-card"></i>Register</a></li>
+            <li><a href="./Signin&Signup.html" target="_blank"><i class="fa fa-right-to-bracket"></i>Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="navbar__left">
+          <a class="active_link" href="#">Admin</a>
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="" alt="" />
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img id="admin_img" src="https://i.ibb.co/82k2WKR/photo.jpg" alt="" />
+            <div class="main__greeting">
+              <h1 id="admin_name_h1">Hello Prashant Verma</h1>
+              <p id="admin_welcome">Welcome to your admin dashboard</p>
+            </div>
+          </div>
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards">
+            <div class="card">
+              <i
+                class="fa-solid fa-box-open fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Products</p>
+                <span id="totproducts" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fa-brands fa-product-hunt fa-2x text-red" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Men's Products</p>
+                <span id="menproducts_" class="font-bold text-title">0</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i
+                class="fa-brands fa-product-hunt fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Women's Products</p>
+                <span id="women_pro_" class="font-bold text-title">0</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i
+                class="fa-brands fa-product-hunt fa-2x text-green"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Kids Products</p>
+                <span id="kids_pro" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa-brands fa-product-hunt fa-2x text-yellow"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Footwears</p>
+                <span id="foot_wear" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa-solid fa-truck-fast fa-2x text-green"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Orders</p>
+                <span class="font-bold text-title">645</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa-solid fa-user fa-2x text-red"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Users</p>
+                <span id="totuser" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+              class="fa-solid fa-box-open fa-2x text-lightblue"
+              aria-hidden="true"
+            ></i>
+              <div class="card_inner">
+                <span class="addupdatebtn" id="add_product_btn">Add Product </span>
+                <span class="addupdatebtn" id="update_product_btn">Update Product </span>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN CARDS ENDS HERE -->
+          <div id="updateform">
+            <div  class="add_product">
+              <h2>Adding New Product's Form</h2>
+              <form id="addproduct">
+                <table>
+                  <tr style="width: 100%;">
+                      <td><p>Product Category In Which You Want To Add</p></td>
+                      <td colspan="3"><input type="text" id="prourltoadd" placeholder="Type to add product M for Men,W for Women, K for Kids, F for Footwear " required></td>
+                  </tr>
+                  <tr>
+                      <td><p>Image Links</p></td>
+                      <td><input type="text" id="image1" placeholder="IMAGE 1 LINK" required></td>
+                      <td><input type="text" id="image2" placeholder="IMAGE 2 LINK" ></td>
+                      <td><input type="text" id="image3" placeholder="IMAGE 3 LINK" ></td>
+                  </tr>
+                  <tr>
+                      <td><p>Products Name</p></td>
+                      <td><input type="text" id="productName" placeholder="Products Name" required></td>
+                  </tr>
+                  <tr>
+                      <td><p>Sale Price and Offer Price</p></td>
+                      <td><input type="text" id="salePrice" placeholder="Sale Price" required></td>
+                      <td><input type="text" id="offerPrice" placeholder="Offer Price" required></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td><p>Rating</p></td>
+                      <td><input type="number" id="rating" placeholder="Rating" required></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td><p>Details</p></td>
+                      <td><input type="text" id="detailHeading" placeholder="Heading of Detail" required></td>
+                      <td><input type="text" id="detailContent" placeholder="Content of Detail" required></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td><p>Fabric</p></td>
+                      <td><input type="text" id="fabric_o" placeholder="Material 1" required></td>
+                      <td><input type="text" id="fabric_t" placeholder="Material 2" ></td>
+                      <td><input type="text" id="fabric_th" placeholder="Material 3" ></td>
+                  </tr>
+                  <tr>
+                      <td><p>Some extra Details</p></td>
+                      <td><input type="text" id="extra1" placeholder="1st" required></td>
+                      <td><input type="text" id="extra2" placeholder="2nd" ></td>
+                      <td><input type="text" id="extra3" placeholder="3rd" ></td>
+                  </tr>
+                  <tr style="background-color: white;">
+                      <td></td>
+                      <td colspan="2"><input style="width: 50%;" type="submit" class="sub_btn"></td>
+                      <td></td>
+                  </tr>
+              </table>
+              
+              </form>
+            </div>
+            <div class="update_product">
+              <h2>Updating Product's Form</h2>
+              <form id="updateproduct" >
+                <table>
+                  <tr style="width: 100%;">
+                    <td><p>Product Category In Which You Want To Update</p></td>
+                    <td colspan="3"><input type="text" id="up_date_cate" placeholder="Type to add product M for Men,W for Women, K for Kids, F for Footwear " ></td>
+                  </tr>
+                  <tr>
+                    <td><p>Product's Unique ID</p></td>
+                    <td><input type="text" id="productsuniqid" placeholder="Product's ID"></td>
+                  </tr>
+                  <tr id="table2_row1">
+                    <td><p>Image Links</p></td>
+                    <td><input type="text" id="table2_image1" placeholder="IMAGE 1 LINK"></td>
+                    <td><input type="text" id="table2_image2" placeholder="IMAGE 2 LINK"></td>
+                    <td><input type="text" id="table2_image3" placeholder="IMAGE 3 LINK"></td>
+                  </tr> 
+                  <tr id="table2_row2">
+                    <td><p>Products Name</p></td>
+                    <td><input type="text" id="table2_productName" placeholder="Products Name"></td>
+                  </tr>
+                  <tr id="table2_row3">
+                    <td><p>Sale Price and Offer Price</p></td>
+                    <td><input type="text" id="table2_salePrice" placeholder="Sale Price"></td>
+                    <td><input type="text" id="table2_offerPrice" placeholder="Offer Price"></td>
+                    <td></td>
+                  </tr>
+                  <tr id="table2_row4">
+                    <td><p>Rating</p></td>
+                    <td><input type="number" id="table2_rating" placeholder="Rating"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr id="table2_row5">
+                    <td><p>Details</p></td>
+                    <td><input type="text" id="table2_detailHeading" placeholder="Heading of Detail"></td>
+                    <td><input type="text" id="table2_detailContent" placeholder="Content of Detail"></td>
+                    <td></td>
+                  </tr>
+                  <tr id="table2_row6">
+                    <td><p>Fabric</p></td>
+                    <td><input type="text" id="table2_fabric_o" placeholder="Material 1" ></td>
+                    <td><input type="text" id="table2_fabric_t" placeholder="Material 2" ></td>
+                    <td><input type="text" id="table2_fabric_th" placeholder="Material 3" ></td>
+                  </tr> 
+                  <tr id="table2_row7">
+                    <td><p>Some extra Details</p></td>
+                    <td><input type="text" id="table2_extra1" placeholder="1st"></td>
+                    <td><input type="text" id="table2_extra2" placeholder="2nd"></td>
+                    <td><input type="text" id="table2_extra3" placeholder="3rd"></td>
+                  </tr>
+                  <tr style="background-color: white;">
+                    <td></td>
+                    <td colspan="2"><input style="width: 50%;" type="submit" class="sub_btn"></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__left">
+              <h2>Men's Products</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Product ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_">
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <div class="charts__right">
+              <h2>Women's Products</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Product ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_women">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="charts">
+            <div class="charts__left">
+              <h2>Kid's Products</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Product ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_Kids">
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <div class="charts__right">
+              <h2>Footwears</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Product ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_footwear">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <!-- CHARTS ENDS HERE -->
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../Javascript/admin.js"></script>
+  </body>
+</html>

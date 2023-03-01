@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In/Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="../Styles/Signin&Signup.css">
+<script
+src="https://kit.fontawesome.com/b4c8ae89b2.js"
+crossorigin="anonymous"
+></script>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.sliderbtn').click(function(){
+   $('.sliderbtn').toggleClass('active');
+   $('#sidebar').toggleClass('inandout');
+   })
+ })
+</script>
+</head>
+<body>
+	  <!-- HEADER AND NAV BAR*********************************** -->
+	  <header>
+		<div id="sidebar">
+		  <div>
+			<button class="sliderbtn" id="sliderbutton">
+			   <div class="hamburger">
+			   </div>
+			</button>
+			<ul>
+			    <li style="background-color: #CFD8DC;"><a href="../index.html"><i class="fa fa-bars"></i><img src="https://i.ibb.co/4JnjqbJ/City-Sass-removebg-preview-1.png" style="width: 150px;height: 45px;position: absolute;" alt=""></a></li>
+            <li><a href="../index.html"><i class="fa fa-house"></i>Home</a></li>
+            <li id="men_p"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Men's Products</a></li>
+            <li id="women_P"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Women's Products</a></li>
+          <li id="kid_P"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Kid's Products</a></li>
+            <li id="fot_w"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Footwear</a></li>
+            <li><a href="./cart.html" target="_blank"><i class="fa fa-cart-shopping"></i>Cart</a></li>
+            <li><a href="./admin.html" target="_blank" class="icolortoblack" ><i class="fa-solid fa-user-secret" ></i>Admin Panel</a></li>
+            <li><a href="./Signin&Signup.html" target="_blank"><i class="fa fa-address-card"></i>Register</a></li>
+            <li><a href="./Signin&Signup.html" target="_blank"><i class="fa fa-right-to-bracket"></i>Login</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </header>
+	  
+<!-- partial:index.partial.html -->
+<div class="container right-panel-active" id="fullcontentcontainer">
+	<!-- Sign Up -->
+	<div class="container__form container--signup">
+		<form action="#" class="form" id="form1">
+			<h2 class="form__title">Sign Up</h2>
+			<input type="text" placeholder="User Name" id="name" class="input" />
+			<input type="email" placeholder="Email" id="email" class="input" />
+			<input type="password" placeholder="Password" id="password" class="input" />
+			<input type="text" placeholder="Gender M / F" id="gender" class="input" />
+			<input type="number" placeholder="Age" id="age" class="input" />
+			<input type="text" placeholder="Type Your Address Here..." id="add" class="input" />
+            <input type="submit" class="btn" value="Sign Up">
+		</form>
+	</div>
+
+	<!-- Sign In -->
+	<div class="container__form container--signin">
+		<form action="#" class="form" id="form2">
+			<h2 class="form__title">Sign In</h2>
+			<input type="email" placeholder="Email" id="semail" class="input" />
+			<input type="password" placeholder="Password" id="spassword" class="input" />
+			<a href="#" class="link">Forgot your password?</a>
+            <input type="submit" class="btn" value="Sign In">
+		</form>
+	</div>
+
+	<!-- Overlay -->
+	<div class="container__overlay">
+		<div class="overlay">
+			<div class="overlay__panel overlay--left">
+				<button class="btn" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay__panel overlay--right">
+				<button class="btn" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script  src="../Javascript/Signin&Signup.js"></script>
+
+</body>
+</html>

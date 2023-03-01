@@ -1,0 +1,48 @@
+[
+    {
+        "img": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "title": "",
+        "price": ["", ""],
+        "offer": "",
+        "rating": 4.3,
+        "userreviews": 329,
+        "color": [
+          {
+            "c": "",
+            "imgs": [
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "c": "",
+            "imgs": [
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        ],
+        "size":["XXS","XS","S","M","L"],
+        "details":[   
+        ],
+        "listpoints":[
+    
+        ],
+        "fabric":["100% polyester MTR filament fleece, 250g"],
+        "reviews":[
+           {
+            "username":"Laura",
+            "review":"Great Looking with lots of Color. Can go with lots of clothing options."
+           }
+        ]
+      }
+]

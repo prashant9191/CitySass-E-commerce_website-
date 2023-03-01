@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/b4c8ae89b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.sliderbtn').click(function(){
+       $('.sliderbtn').toggleClass('active');
+       $('#sidebar').toggleClass('inandout');
+       })
+     })
+   </script>
+
+  </head>
+  <body>
+    <!-- HEADER AND NAV BAR*********************************** -->
+    <header>
+      <div id="sidebar">
+        <div>
+          <button class="sliderbtn" id="sliderbutton">
+             <div class="hamburger">
+             </div>
+          </button>
+          <ul>
+            <li style="background-color: #CFD8DC;"><a href="./index.html"><i class="fa fa-bars"></i><img src="https://i.ibb.co/4JnjqbJ/City-Sass-removebg-preview-1.png" style="width: 150px;height: 45px;position: absolute;" alt=""></a></li>
+            <li><a href="./index.html"><i class="fa fa-house"></i>Home</a></li>
+            <li id="men_p"><a href="./Html/ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Men's Products</a></li>
+            <li id="women_P"><a href="./Html/ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Women's Products</a></li>
+          <li id="kid_P"><a href="./Html/ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Kid's Products</a></li>
+            <li id="fot_w"><a href="./Html/ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Footwear</a></li>
+            <li><a href="./Html/cart.html" target="_blank"><i class="fa fa-cart-shopping"></i>Cart</a></li>
+            <li><a href="./Html/admin.html" target="_blank" class="icolortoblack" ><i class="fa-solid fa-user-secret" ></i>Admin Panel</a></li>
+            <li><a href="./Html/Signin&Signup.html" target="_blank"><i class="fa fa-address-card"></i>Register</a></li>
+            <li><a href="./Html/Signin&Signup.html" target="_blank"><i class="fa fa-right-to-bracket"></i>Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="topbar">
+        
+        <div id="shop_now_">
+          <p id="topptag">40% Off Select Winter Gear, <a href="./Html/ProductPage.html">Shop Now ></a></p>
+        </div>
+        <div>
+          <a href=""><i class="fa-solid fa-location-dot fa-2x"></i></a>
+          <span>Join For Rewards</span>
+          <a href="./Html/Signin&Signup.html"><i class="fa-solid fa-user fa-2x"></i></a>
+          <a href="./Html/cart.html"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="fixedHeader" id="fixedheadertop">
+        <div id="category_container">
+          <div id="navleftdiv">
+            <div id="category_img">
+              <a href="./index.html"
+                ><img
+                  src="https://i.ibb.co/4JnjqbJ/City-Sass-removebg-preview-1.png"
+              /></a>
+            </div>
+            <div class="categories">
+              <li class="categ">Men</li>
+              <li class="categ">Women</li>
+              <li class="categ">Kids</li>
+              <li class="categ">Footwear</li>
+            </div>
+          </div>
+
+          <div id="searchdiv">
+            <input type="text" id="search" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </div>
+        </div>
+
+        <div class="boxDropdown">
+          <div class="eyeglasses">
+            <div class="category">
+              <ul>
+                <li class="workingLinks" data-page="men-page">Winter Sale</li>
+                <li class="workingLinks" data-page="men-page">Jackets & Vests</li>
+                <li class="workingLinks" data-page="men-shoose-page">Shoes</li>
+                <li>New Arrivals</li>
+                <li>Best Seller</li>
+                <li>Featured</li>
+                <li>Fleece</li>
+                <li>Shirts</li>
+                <li>Baselayer</li>
+                <li>Big & Tall</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <div class="gender">
+              <img
+                src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                alt="winter sale img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="boxDropdown">
+          <div class="eyeglasses sunglasses">
+            <div class="category">
+              <ul>
+                <li class="workingLinks" data-page="women-page">Winter Sale</li>
+                <li class="workingLinks" data-page="women-page">Tshirts</li>
+                <li class="workingLinks" data-page="men-shoose-page">Shoes</li>
+                <li>Best Seller</li>
+                <li class="workingLinks">Jackets & Vests</li>
+                <li>Featured</li>
+                <li>Fleece</li>
+                <li>Tops</li>
+                <li>Baselayer</li>
+                <li>Bottoms</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <div class="gender">
+              <img
+                src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                alt="winter sale img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="boxDropdown">
+          <div class="contactLenses">
+            <div class="category">
+              <ul>
+                <li class="workingLinks" data-page="kids-page">Winter Sale</li>
+                <li class="workingLinks" data-page="kids-page">New Arrivals</li>
+                <li class="workingLinks" data-page="men-shoose-page">Tops</li>
+                <li>Best Seller</li>
+                <li>Featured</li>
+                <li>Boys</li>
+                <li>Girls</li>
+                <li>Pajamas</li>
+                <li>Toddlers & Baby</li>
+                <li>Shoes</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <div class="gender">
+              <img
+                src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                alt="winter sale img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="boxDropdown">
+          <div class="eyetest">
+            <div class="category">
+              <ul>
+                <li class="workingLinks" data-page="shoose-page">Winter Sale</li>
+                <li class="workingLinks" data-page="shoose-page">New Arrivals</li>
+                <li class="workingLinks" data-page="shoose-page">Best Seller</li>
+                <li class="workingLinks" data-page="shoose-page">Men's Shoose</li>
+                <li class="workingLinks" data-page="shoose-page">women's Shoose</li>
+                <li>Kid'Shoose</li>
+                <li>Wide Fo</li>
+                <li>Baselayer</li>
+                <li>Pants & Shorts</li>
+                <li>Shoes</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <div class="gender">
+              <img
+                src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                alt="winter sale img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- banner img -->
+
+    <div id="banner">
+      <img src="https://i.ibb.co/X3Th8G0/banner.png" alt="banner" />
+    </div>
+    <div class="midcontainer">
+      <h2>Seasonal Essentials</h2>
+      <div id="firstSlider" class="autoplay">
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/11-03_37132_C_U_OOP_q4_NewtonRidge_HP_Promo_Mens_PDP?$aem_pjpeg$"
+            alt=""
+          />
+          <h4 style="text-align: center; margin-top: 10px">Men's</h4>
+        </div>
+        <div class="women__slider">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/11-03_37132_C_U_OOP_q4_NewtonRidge_HP_W_PDP?$aem_pjpeg$"
+            alt=""
+          />
+          <h4 style="text-align: center; margin-top: 10px">Women's</h4>
+        </div>
+        <div class="kids__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/11-03_37132_C_U_OOP_q4_NewtonRidge_HP_Promo_Youth_PDP?$aem_pjpeg$"
+            alt=""
+          />
+          <h4 style="text-align: center; margin-top: 10px">Kids</h4>
+        </div>
+        <div class="foot_wear">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/11-03_37132_C_U_OOP_q4_NewtonRidge_HP_FW_PDP?$aem_pjpeg$"
+            alt=""
+          />
+          <h4 style="text-align: center; margin-top: 10px">Footwear</h4>
+        </div>
+        <div class="foot_wear">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/10-20_34963_C_U_Q4_GiftGuide_HP_VisNav_ACE?$aem_pjpeg$"
+            alt=""
+          />
+          <h4 style="text-align: center; margin-top: 10px">Accessories</h4>
+        </div>
+      </div>
+      <div class="mountainbanner">
+        <img class="product__"
+          src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/02-09_37315_Campaign_Mountain_v0_XL?$aem_pjpeg$"
+          alt="Mountain"
+        />
+      </div>
+      <h2 class="centertext">The Mountain Is Calling</h2>
+      <p>Answer it in warm, waterproof, breathable gear.</p>
+      <div id="shopbtn">
+        <button id="shopSkibtn">SHOP SKI & SNOW</button>
+      </div>
+      <h2>Featured Favorites</h2>
+      <div id="secondslider" class="autoplay">
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1957341_858_f?wid=768&hei=806&v=1676388993"
+            style="width:100%;"
+            alt=""
+          />
+        </div>
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1917381_010_f?wid=768&hei=806&v=1676388993"
+            style="width:100%;"
+            alt=""
+          />
+        </div>
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1864271_467_f?wid=768&hei=806&v=1676388993"
+            style="width:100%;"
+            alt=""
+          />
+        </div>
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1442361_346_f?wid=768&hei=806&v=1676388993"
+            style="width:100%;"
+            alt=""
+          />
+        </div>
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/RM2433_433_f?wid=768&hei=806&v=1676388993"
+            style="width:100%;"
+            alt=""
+          />
+        </div>
+        <div class="product__">
+          <img
+            src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1619281_257_f?wid=768&hei=806&v=1676388993"
+            style="width:100%;"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="staydry">
+        <div>
+          <img src="https://i.ibb.co/xFRLnvf/staydry.png" alt="" />
+        </div>
+        <div>
+          <img src="https://i.ibb.co/z6pG7wS/adventureahed.png" alt="" />
+        </div>
+      </div>
+      <h2>How Do You Play?</h2>
+      <div id="play">
+        <div>
+          <img src="https://i.ibb.co/VYX1thn/fishing.png" alt="fishing" />
+        </div>
+        <div>
+          <img src="https://i.ibb.co/WkzRmsB/hiking.png" alt="hiking" />
+        </div>
+        <div>
+          <img src="https://i.ibb.co/wCQytVn/hunting.png" alt="hunting" />
+        </div>
+        <div>
+          <img
+            src="https://i.ibb.co/1Zzrmpr/ski-and-snow.png"
+            alt="ski-and-snow"
+          />
+        </div>
+      </div>
+      <div id="nature">
+        <h1>"Nature.The World's Largest Playground."</h1>
+        <div>
+          <h4>Gert Boyle</h4>
+          <p>FOUNDER, COLUMBIA SPORTSWEAR</p>
+        </div>
+      </div>
+      <div class="autoplay" id="productslider">
+        <div class="product__">
+          <div>
+            <img
+              src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1800661_271_f?wid=768&hei=806&v=1676388993"
+              alt=""
+            />
+          </div>
+          <div class="detailsdiv">
+            <p>Fleece Interchange Jacket</p>
+            <div class="pricediv">
+              <p>$104.92</p>
+              <p>$210.00</p>
+            </div>
+            <div class="ratingsdiv">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__">
+          <div>
+            <img
+              src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1916061_010_f?wid=768&hei=806&v=1676388993"
+              alt=""
+            />
+          </div>
+          <div class="detailsdiv">
+            <p>Men's Delta Ridge™ Down Vest</p>
+            <div class="pricediv">
+              <p>$96.91</p>
+              <p>$130.00</p>
+            </div>
+            <div class="ratingsdiv">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__">
+          <div>
+            <img
+              src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1866751_858_f?wid=768&hei=806&v=1676388993"
+              alt=""
+            />
+          </div>
+          <div class="detailsdiv">
+            <p>Men's Whirlibird™ IV Interchange Jacket</p>
+            <div class="pricediv">
+              <p>$114.92</p>
+              <p>$230.00</p>
+            </div>
+            <div class="ratingsdiv">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__">
+          <div>
+            <img
+              src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/WM3220_021_f?wid=768&hei=806&v=1676388993"
+              alt=""
+            />
+          </div>
+          <div class="detailsdiv">
+            <p>Full Zip Fleece Jacket</p>
+            <div class="pricediv">
+              <p>$32.98</p>
+              <p>$65.00</p>
+            </div>
+            <div class="ratingsdiv">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__">
+          <div>
+            <img
+              src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2008441_009_f?wid=768&hei=806&v=1676388993"
+              alt=""
+            />
+          </div>
+          <div class="detailsdiv">
+            <p>Men's Toyama Pass™ Down Parka</p>
+            <div class="pricediv">
+              <p>$149.92</p>
+              <p>$300.00</p>
+            </div>
+            <div class="ratingsdiv">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product__">
+          <div>
+            <img
+              src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2011251_316_f?wid=768&hei=806&v=1676388993"
+              alt=""
+            />
+          </div>
+          <div class="detailsdiv">
+            <p>Men's Timberturner™ II Ski Jacket</p>
+            <div class="pricediv">
+              <p>$155.91</p>
+              <p>$260.00</p>
+            </div>
+            <div class="ratingsdiv">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact_container">
+      <div>
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>(800) 622-6953</p>
+        <p>Phone: 5am-8pm PT Mon-Fri, Closed Sat/Sun</p>
+        <p>Chat: 5am-8pm PT Sat/Sun, 4am-9pm PT Mon-Fri</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-person-military-pointing"></i>
+        <p>Customer Care</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-gift"></i>
+        <p>Gitft Card</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-store"></i>
+        <p>Find A Store</p>
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="footersubcontainer">
+        <h1><i class="fa-solid fa-globe">GREATER REWARDS</i></h1>
+        <p>Join the adventure</p>
+        <p>
+          Get free ground shipping and rewards on every purchase, plus other
+          exclusive benefits >
+        </p>
+        <div>
+          <a href="./Html/Signin&Signup.html">Join Now</a>
+          <a href="./Html/Signin&Signup.html">Log In</a>
+        </div>
+      </div>
+      <div id="footerbase">
+        <div>
+          <div class="aboutus">
+            <h2>About Us</h2>
+            <a href="">Tough Mother Outdoor Guide</a>
+            <a href="">History</a>
+            <a href="">Columbia Greater Rewards Program</a>
+            <a href="">Corporate Responsibility</a>
+            <a href="">Investor Relations</a>
+            <a href="">Press Center</a>
+            <a href="">Careers</a>
+          </div>
+          <div class="aboutus">
+            <h2>Shop</h2>
+            <a href="">Shop By Activity</a>
+            <a href="">Shop By Technology</a>
+            <a href="">Returns</a>
+            <a href="">Warranty</a>
+            <a href="">Product Care</a>
+            <a href="">Accessibility</a>
+            <a href="">Special Deals</a>
+          </div>
+        </div>
+        <div>
+          <h2>CONNECT WITH US</h2>
+          <p>
+            Subscribe and be the first to hear about new products, sales, and
+            more.
+          </p>
+          <div id="socilmedia">
+            <a href=""><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+            <a href=""><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+            <a href=""><i class="fa-brands fa-youtube fa-3x"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter fa-3x"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin fa-3x"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok fa-3x"></i></a>
+          </div>
+          <h2>Customer Care ></h2>
+          <p>Phone: 5am-8pm PT Mon-Fri, Closed Sat/Sun</p>
+          <p>Chat: 5am-8pm PT Sat/Sun, 4am-9pm PT Mon-Fri</p>
+        </div>
+      </div>
+      <div id="copyrights">
+        <p>&copy; Copyright 2023</p>
+        <p>&copy; Prashant Verma</p>
+      </div>
+    </footer>
+
+    <!-- js for slider -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <script>
+      $(".autoplay").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive:[
+          {
+            breakpoint:920,
+            settings:{
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint:800,
+            settings:{
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint:630,
+            settings:{
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+  <script src="./Javascript/index.js"></script>
+</html>

@@ -1,0 +1,300 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <script
+    src="https://kit.fontawesome.com/b4c8ae89b2.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.sliderbtn').click(function(){
+   $('.sliderbtn').toggleClass('active');
+   $('#sidebar').toggleClass('inandout');
+   })
+ })
+</script>
+
+    <link rel="stylesheet" href="../Styles/cart.css">
+  </head>
+  <body>
+      <!-- HEADER AND NAV BAR*********************************** -->
+      <header>
+        <div id="sidebar">
+          <div>
+            <button class="sliderbtn" id="sliderbutton">
+               <div class="hamburger">
+               </div>
+            </button>
+            <ul>
+              <li style="background-color: #CFD8DC;"><a href="../index.html"><i class="fa fa-bars"></i><img src="https://i.ibb.co/4JnjqbJ/City-Sass-removebg-preview-1.png" style="width: 150px;height: 45px;position: absolute;" alt=""></a></li>
+              <li><a href="../index.html"><i class="fa fa-house"></i>Home</a></li>
+              <li id="men_p"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Men's Products</a></li>
+              <li id="women_P"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Women's Products</a></li>
+            <li id="kid_P"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Kid's Products</a></li>
+              <li id="fot_w"><a href="./ProductPage.html" target="_blank" class="icolortoblack" ><i class="fa-brands fa-product-hunt"></i>Footwear</a></li>
+              <li><a href="./cart.html" target="_blank"><i class="fa fa-cart-shopping"></i>Cart</a></li>
+              <li><a href="./admin.html" target="_blank" class="icolortoblack" ><i class="fa-solid fa-user-secret" ></i>Admin Panel</a></li>
+              <li><a href="./Signin&Signup.html" target="_blank"><i class="fa fa-address-card"></i>Register</a></li>
+              <li><a href="./Signin&Signup.html" target="_blank"><i class="fa fa-right-to-bracket"></i>Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="topbar">
+          
+          <div>
+            <p id="topptag">40% Off Select Winter Gear, <a href="">Shop Now ></a></p>
+          </div>
+          <div>
+            <a href=""><i class="fa-solid fa-location-dot fa-2x"></i></a>
+            <span>Join For Rewards</span>
+            <a href="./Signin&Signup.html"><i class="fa-solid fa-user fa-2x"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="fixedHeader" id="fixedheadertop">
+          <div id="category_container">
+            <div id="navleftdiv">
+              <div id="category_img">
+                <a href="../index.html"
+                  ><img
+                    src="https://i.ibb.co/4JnjqbJ/City-Sass-removebg-preview-1.png"
+                /></a>
+              </div>
+              <div class="categories">
+                <li class="categ">Men</li>
+                <li class="categ">Women</li>
+                <li class="categ">Kids</li>
+                <li class="categ">Footwear</li>
+              </div>
+            </div>
+  
+            <div id="searchdiv">
+              <input type="text" id="search" placeholder="Search" />
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </div>
+          </div>
+  
+          <div class="boxDropdown">
+            <div class="eyeglasses">
+              <div class="category">
+                <ul>
+                  <li class="workingLinks" data-page="men-page">Winter Sale</li>
+                  <li class="workingLinks" data-page="men-page">Jackets & Vests</li>
+                  <li class="workingLinks" data-page="men-shoose-page">Shoes</li>
+                  <li>New Arrivals</li>
+                  <li>Best Seller</li>
+                  <li>Featured</li>
+                  <li>Fleece</li>
+                  <li>Shirts</li>
+                  <li>Baselayer</li>
+                  <li>Big & Tall</li>
+                  <li>Accessories</li>
+                </ul>
+              </div>
+              <div class="gender">
+                <img
+                  src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                  alt="winter sale img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="boxDropdown">
+            <div class="eyeglasses sunglasses">
+              <div class="category">
+                <ul>
+                  <li class="workingLinks" data-page="women-page">Winter Sale</li>
+                  <li class="workingLinks" data-page="women-page">Tshirts</li>
+                  <li class="workingLinks" data-page="men-shoose-page">Shoes</li>
+                  <li>Best Seller</li>
+                  <li class="workingLinks">Jackets & Vests</li>
+                  <li>Featured</li>
+                  <li>Fleece</li>
+                  <li>Tops</li>
+                  <li>Baselayer</li>
+                  <li>Bottoms</li>
+                  <li>Accessories</li>
+                </ul>
+              </div>
+              <div class="gender">
+                <img
+                  src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                  alt="winter sale img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="boxDropdown">
+            <div class="contactLenses">
+              <div class="category">
+                <ul>
+                  <li class="workingLinks" data-page="kids-page">Winter Sale</li>
+                  <li class="workingLinks" data-page="kids-page">New Arrivals</li>
+                  <li class="workingLinks" data-page="men-shoose-page">Tops</li>
+                  <li>Best Seller</li>
+                  <li>Featured</li>
+                  <li>Boys</li>
+                  <li>Girls</li>
+                  <li>Pajamas</li>
+                  <li>Toddlers & Baby</li>
+                  <li>Shoes</li>
+                  <li>Accessories</li>
+                </ul>
+              </div>
+              <div class="gender">
+                <img
+                  src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                  alt="winter sale img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="boxDropdown">
+            <div class="eyetest">
+              <div class="category">
+                <ul>
+                  <li class="workingLinks" data-page="shoose-page">Winter Sale</li>
+                  <li class="workingLinks" data-page="shoose-page">New Arrivals</li>
+                  <li class="workingLinks" data-page="shoose-page">Best Seller</li>
+                  <li class="workingLinks" data-page="shoose-page">Men's Shoose</li>
+                  <li class="workingLinks" data-page="shoose-page">women's Shoose</li>
+                  <li>Kid'Shoose</li>
+                  <li>Wide Fo</li>
+                  <li>Baselayer</li>
+                  <li>Pants & Shorts</li>
+                  <li>Shoes</li>
+                  <li>Accessories</li>
+                </ul>
+              </div>
+              <div class="gender">
+                <img
+                  src="https://i.ibb.co/DpKwkGt/sale-img.png"
+                  alt="winter sale img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <div id="container" >
+      <!-- top blue bckg heading  -->
+      <div id="bg-blue">
+        <h3>Free Shipping on Orders of $140 or More</h3>
+      </div>
+      <p><a href="index.html"></a></p>
+      <!--Done with top blue bckg heading  -->
+
+      <!-- alert notification -->
+      <div id="alert-notification" >
+        <h4 id="alert-here"></h4>
+      </div>
+      <!--done with alert notification -->
+
+      <!-- Become a BN Member to Get Free Shipping!/ -->
+      <div id="cards" >
+        <!-- left  -->
+        <div id="membership-card">
+          <div id="My-shopping">
+            <div class="line"></div>
+            <div><h3>My Shopping Cart</h3></div>
+            <div class="line"></div>
+          </div>
+
+          <!-- Items from Barnes & Noble -->
+          
+          <div id="item-cards">
+            all cart products are here
+
+           </div> 
+        </div>
+
+        <!-- RIGHT   -->
+
+        <div id="right">
+          <div id="order-summary">
+            <h4 id="order-title">Order Summary</h4>
+            <div class="subtotal-parent-div">
+              <div>
+                <p>Subtotal(<span id="subtotal-items"></span>)</p>
+              </div>
+              <div>$<span id="subtotal"></span></div>
+            </div>
+            <!-- estimated  -->
+            <div class="subtotal-parent-div">
+              <div><p>Estimated Shipping</p></div>
+              <div><span id="estimated-shipping"></span></div>
+            </div>
+            <!-- tax -->
+            <div class="subtotal-parent-div">
+              <div><p>Estimated Tax</p></div>
+              <div>$<span id="tax"></span></div>
+            </div>
+            <hr id="hr-line" />
+            <!-- order total -->
+            <div class="subtotal-parent-div">
+              <div><p>Order Total</p></div>
+              <div>$<span id="order-total">0</span></div>
+            </div>
+            <!-- checkout-button -->
+            <a href="../Html/checkout.html"
+              style="text-decoration: none;"><button id="checkout-button">CHECKOUT</button></a>
+
+            <!-- Or Checkout With -->
+            <div id="My-shopping">
+              <div class="line"></div>
+              <div><h3 id="or-checkout">Checkout With</h3></div>
+              <div class="line"></div>
+            </div>
+
+            <!-- paypal payment -->
+            <a href="paypal.com/us/business/make-payments">
+              <div id="checkout-logos">
+                <div>
+                  <img
+                    class="paypal-logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+
+            <!-- visa  -->
+            <div id="visa">
+            </div>
+          </div>
+
+          <!-- apply coupon -->
+          <div class="coupon-border">
+            <div id="apply-coupon">
+              <div>
+                <input
+                  id="apply-coupon-input"
+                  type="text"
+                  maxlength="20"
+                  placeholder="Apply Coupon Here"
+                />
+              </div>
+              <div><button id="coupon-btn">Apply</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards div ended Here -->
+    </div>
+
+
+
+  </body>
+  <script src="../Javascript/cart.js"></script>
+</html>
