@@ -1,4 +1,4 @@
-# CitySass, Fashion website  
+# CitySass, Fashion website  100% Responsive for Phone to Laptop's screens
 
 # Screenshots are attached below in a proper flow
 
