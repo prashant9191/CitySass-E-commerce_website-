@@ -4,9 +4,9 @@
 
 This is a construct week project of cloning https://www.columbia.com/ that is built in 5 days .
 
-# Netlify Deployed link
+# Vercel Deployed link
 
-https://statuesque-croquembouche-19c986.netlify.app/
+https://city-sass-e-commerce-website.vercel.app/
 
 # Backend Deployed Url
 
