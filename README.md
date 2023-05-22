@@ -6,7 +6,7 @@ This is a construct week project of cloning https://www.columbia.com/ that is bu
 
 # Vercel Deployed link
 
-https://city-sass-e-commerce-website.vercel.app/
+https://city-sass-e-commerce-website-yi5i.vercel.app/
 
 # Backend Deployed Url
 
